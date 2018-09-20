@@ -12,7 +12,7 @@ public class Stack {
 		size = 0;
 	}
 	
-	// NEED TO MODIFY
+	
 	// methods
 	// return true if the stack is empty
 	public boolean isEmpty(){
