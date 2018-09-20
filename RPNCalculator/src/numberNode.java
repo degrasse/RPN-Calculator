@@ -1,4 +1,4 @@
-// DO NOT MODIFY
+
 public class numberNode extends Node{
 	// fields
 	public double value;
