@@ -13,7 +13,7 @@ public class Queue {
 		size = 0;
 	}
 		
-	// NEED TO MODIFY
+	
 	// methods
 	// returns true if the queue is empty
 	public boolean isEmpty(){
