@@ -5,14 +5,11 @@ public class Stack {
 	public int size;
 	
 	// constructor
-	// When constructing a new stack, everything is empty.
-
 	Stack(){
 		topNode = null;
 		size = 0;
 	}
-	
-	
+
 	// methods
 	// return true if the stack is empty
 	public boolean isEmpty(){
@@ -29,14 +26,10 @@ public class Stack {
 			return size;
 		}
 			
-		}
+	}
 	
 	// insert the given node to the end of the stack 
-	// remember to change the size after you insert
-	
 	public void push(Node node){
-		
-		//not sure if this.topNode or just topNode --> may cause error
 		Node hold = this.topNode;
 		//topNode = new Node();
 		topNode = node;
@@ -44,11 +37,7 @@ public class Stack {
 		size = size + 1; 
 		
 	}
-	
 	// return and remove the most recent added node from the stack
-	// remember to change the size after you remove
-	// remember to check if the stack is already empty before removing
-	
 	public Node pop(){
 		
 		if(isEmpty()){
@@ -61,13 +50,5 @@ public class Stack {
 			return holder;
 		}
 		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
 }
