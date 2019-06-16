@@ -8,8 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class RPNCalculator {
-	  
+public class RPNCalculator {  
 	
 	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
@@ -25,8 +24,6 @@ public class RPNCalculator {
 		
 		//  Using Scanner objects to scan through the files
 		// and add values to the stack and the queue accordingly.
-		
-		
 	
 			Scanner stackScanner;
 			try {
@@ -40,40 +37,22 @@ public class RPNCalculator {
 				if(check.equals("+") || check.equals("-") ||check.equals("*") ||check.equals("/") ||check.equals("^") ||check.equals("%") ){
 					stack.push( new operationNode(check));
 					
-				}
-				
-				else{
+				}else{
 					double num = Double.parseDouble(check);
 					stack.push(new numberNode(num));
-					
 				}
-			
-	
-	
 			}	
 			stackScanner.close();
-
-			
-		
-			
-	
 			
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 			
-	
-			
-			
-	
-
-		
 		// while the stack is not empty
-
 		// pop the nodes from the stack
 		// it should always be number, number, operator
-		// if you see any wrong pattern,
+		// if  wrong pattern,
 		// return an error message
 		// if nothing is wrong,
 		// save numbers to n1 and n2
@@ -104,17 +83,13 @@ public class RPNCalculator {
 							result = n1.value%n2.value;
 						}
 
-		
 	numberNode res = new numberNode(result);
 		
 	stack.push( res);
 		
-	}
+	 }	
 		
-		
 	}
 
-
-
-	}
+}
 	
